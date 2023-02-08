@@ -1,2 +1,2 @@
 #!/bin/bash
-cp "$(pwd)"/*.html <(dirname "$(pwd)")
+cp "$(pwd)"/*.html (dirname "$(pwd)")
