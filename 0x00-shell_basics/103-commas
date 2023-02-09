@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | awk -F/ '{printf $NF ", "} END {print ""}'
+ls -a -1 | awk -F/ '{printf $NF ", "} END {print ""}'
