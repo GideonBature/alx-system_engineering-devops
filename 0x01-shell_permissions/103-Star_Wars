@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "It is a period of civil war."
+telnet towel.blinkenlights.nl
