@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -apv
+ls -ap
