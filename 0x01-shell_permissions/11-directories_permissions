@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chmod -type d ugo+x .
+find . -type d -exec sudo chmod ugo+x {}
