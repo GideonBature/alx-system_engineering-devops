@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -dR ugo+x .
+chmod -d ugo+x *./
