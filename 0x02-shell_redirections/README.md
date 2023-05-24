@@ -1,88 +1,238 @@
-# Script Descriptions - Compulsory Tasks
+# Shell - basics
 
-## 0. Hello World
-**Description:** This script prints "Hello, World" followed by a new line to the standard output.
+Covers the following commands:
+* `cd`
+* `ls`
+* `pwd`
+* `less`
+* `file`
+* `ln`
+* `cp`
+* `mv`
+* `rm`
+* `mkdir`
+* `type`
+* `which`
+* `help`
+* `man`
 
-## 1. Confused smiley
-**Description:** This script displays a confused smiley "(Ôo)'.
+## Learning Objectives:
+### 1. General
+- What does RTFM mean?
+- What is a Shebang
 
-## 2. Let's display a file
-**Description:** This script displays the content of the `/etc/passwd` file.
+### 2. What is the Shell
+- What is the shell
+- What is the difference between a terminal and a shell
+- What is the shell prompt
+- How to use the history (the basics)
 
-## 3. What about 2?
-**Description:** This script displays the content of both the `/etc/passwd` and `/etc/hosts` files.
+### 3. Navigation
+- What do the commands or built-ins `cd`, `pwd`, `ls` do
+- How to navigate the filesystem
+- What are the `.` and `..` directories
+- What is the working directory, how to print it and how to change it
+- What is the root directory
+- What is the home directory, and how to go there
+- What is the difference between the root directory and the home directory of the user root
+- What are the characteristics of hidden files and how to list them
+- What does the command `cd -` do
 
-## 4. Last lines of a file
-**Description:** This script displays the last 10 lines of the `/etc/passwd` file.
+### 4. Looking Around
+- What do the commands `ls`, `less`, `file` do
+- How do you use options and arguments with commands
+- Understand the ls long format and how to display it
+- [A Guided Tour](http://linuxcommand.org/lc3_lts0040.php)
+- What does the `ln` command do
+- What do you find in the most common/important directories
+- What is a symbolic link
+- What is a hard link
+- What is the difference between a hard link and a symbolic link
 
-## 5. I'd prefer the first ones actually
-**Description:** This script displays the first 10 lines of the `/etc/passwd` file.
+### 5. Manipulating Files
+- What do the commands `cp`, `mv`, `rm`, `mkdir` do
+- What are wildcards and how do they work
+- How to use wildcards
 
-## 6. Line #2
-**Description:** This script displays the third line of the file named `iacta` in the working directory.
+### 6. Working with Commands
+- What do `type`, `which`, `help`, `man` commands do
+- What are the different kinds of commands
+- What is an alias
+- When do you use the command help instead of man
 
-## 7. It is a good file that cuts iron without making a noise
-**Description:** This shell script creates a file named `*\'"Best School'\*$?*****:)` containing the text "Best School" followed by a new line.
+### 7. Reading Man Pages
+- How to read a man page
+- What are man page sections
+- What are the section numbers for User commands, System calls and Library functions
 
-## 8. Save current state of directory
-**Description:** This script writes the result of the command `ls -la` into the file named `ls_cwd_content`. If the file already exists, it will be overwritten. If the file doesn't exist, it will be created.
+### 8. Keyboard Shortcuts for Bash
+- Common shortcuts for Bash
 
-## 9. Duplicate last line
-**Description:** This script duplicates the last line of the file named `iacta` in the working directory.
+### 9. LTS
+- What does `LTS` mean?
 
-## 10. No more javascript
-**Description:** This script deletes all regular files with a `.js` extension in the current directory and its subfolders.
+## Project Requirements
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your scripts will be tested on Ubuntu 20.04 LTS
+- All your scripts should be exactly two lines long (`$ wc -l file` should print 2)
+- All your files should end with a new line ([why?](http://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file/18789)) 
+- The first line of all your files should be exactly `#!/bin/bash`
+- A `README.md` file at the root of the repo, containing a description of the repository
+- A `README.md` file, at the root of the folder of this project, describing what each script is doing
+- You are not allowed to use backticks, `&&`, `||` or `;`
+- All your scripts must be executable. To make your file executable, use the `chmod` command: `chmod u+x file`. Later, we’ll learn more about how to utilize this command.
 
-## 11. Don't just count your directories, make your directories count
-**Description:** This script counts the number of directories and subdirectories in the current directory, excluding the current and parent directories. It also counts hidden directories.
+## Project Tasks
+### 0. Where am I?
+**Description:** Write a script that prints the absolute path name of the current working directory.
 
-## 12. What’s new
-**Description:** This script displays the 10 newest files in the current directory, sorted from the newest to the oldest.
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `0-current_working_directory` <br>
 
-## 13. Being unique is better than being perfect
-**Description:** This script takes a list of words as input and prints only the words that appear exactly once. The words are sorted in alphabetical order.
+### 1. What’s in there?
+**Description:** Display the contents list of your current directory.
 
-## 14. It must be in that file
-**Description:** This script displays the lines from the file `/etc/passwd` that contain the pattern "root".
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `1-listit` <br>
 
-## 15. Count that word
-**Description:** This script displays the number of lines in the file `/etc/passwd` that contain the pattern "bin".
+### 2. There is no place like home
+**Description:** Write a script that changes the working directory to the user’s home directory.
+- You are not allowed to use any shell variables.
 
-## 16. What's next?
-**Description:** This script displays the lines containing the pattern "root" and the three lines after them in the file `/etc/passwd`.
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `2-bring_me_home` <br>
 
-## 17. I hate bins
-**Description:** This script displays all lines from the file `/etc/passwd` that do not contain the pattern "bin".
+### 3. The long format
+**Description:** Display current directory contents in a long format.
 
-## 18. Letters only please
-**Description:** This script displays all lines from the file `/etc/ssh/sshd_config` that start with a letter, including capital letters.
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `3-listfiles` <br>
 
-## 19. A to Z
-**Description:** This script replaces all occurrences of the characters "A" and "c" in the input with "Z" and "e" respectively.
+### 4. Hidden files
+**Description:** Display current directory contents, including hidden files (starting with `.`). Use the long format.
 
-## 20. Without C, you would live in hiago
-**Description:** This script removes all occurrences of the letters "c" and "C" from the input.
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `4-listmorefiles` <br>
 
-# Script Descriptions - Advanced Tasks
+### 5. I love numbers
+**Description:** Display current directory contents.
+- Long format
+- with user and group IDs displayed numerically
+- And hidden files (starting with `.`)
 
-## 21. esreveR
-**Description:** This script reverses its input.
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `5-listfilesdigitonly` <br>
 
-## 22. DJ Cut Killer
-**Description:** This script displays all users and their home directories based on the information in the `/etc/passwd` file. The output is sorted by users.
+### 6. Welcome
+**Description:** Create a script that creates a directory named `my_first_directory` in the `/tmp/` directory.
 
-## 23. Empty casks make the most noise
-**Description:** This command finds all empty files and directories in the current directory and its subdirectories. It lists only the names of the files and directories (not the entire path), including hidden files. Each file name is listed on a separate line, and the listing ends with a new line.
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `6-firstdirectory` <br>
 
-## 24. A gif is worth ten thousand words
-**Description:** This script lists all files with a `.gif` extension in the current directory and its subdirectories. It lists only regular files (not directories) and displays the names of the files without their extensions. The file names are sorted by byte values in a case-insensitive manner. Each file name is listed on a separate line, and the listing ends with a new line.
+### 7. Betty in my first directory
+**Description:** Move the file `betty` from `/tmp/` to `/tmp/my_first_directory`.
 
-## 25. Acrostic
-**Description:** This script decodes acrostics that use the first letter of each line. It takes the input as multiple lines of text and decodes the acrostic by combining the first letters of each line. The decoded message is displayed, and it ends with a new line.
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `7-movethatfile` <br>
 
-## 26. The biggest fan
-**Description:** This script parses web server logs in TSV (Tab-Separated Values) format as input. It displays the 11 hosts or IP addresses that made the most requests, ordered by the number of requests. The most active host or IP address is displayed at the top.
+### 8. Bye bye Betty
+**Description:** Delete the file `betty`.
+- The file `betty` is in `/tmp/my_first_directory`
 
----
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `8-firstdelete` <br>
 
-Note: The scripts marked with "#advanced" are more complex or advanced than the previous ones.
+### Bye bye My first directory
+**Description:** Delete the directory `my_first_directory` that is in the `/tmp` directory.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `9-firstdirdeletion` <br>
+
+### 10. Back to the future
+**Description:** Write a script that changes the working directory to the previous one.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `10-back` <br>
+
+### 11. Lists
+**Description:** Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the `/boot` directory (in this order), in long format.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `11-lists` <br>
+
+### 12. File type
+**Description:** Write a script that prints the type of the file named `iamafile`. The file `iamafile` will be in the `/tmp` directory when we will run your script.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `12-file_type` <br>
+
+### 13. We are symbols, and inhabit symbols
+**Description:** Create a symbolic link to `/bin/ls`, named `__ls__`. The symbolic link should be created in the current working directory.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `13-symbolic_link` <br>
+
+### 14. Copy HTML files
+**Description:** Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.  <br>
+You can consider that all HTML files have the extension `.html`
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `14-copy_html` <br>
+
+### 15. Let’s move (advanced task)
+**Description:** Create a script that moves all files beginning with an uppercase letter to the directory `/tmp/u`. <br>
+You can assume that the directory `/tmp/u` will exist when we will run your script.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `100-lets_move` <br>
+
+### 16. Clean Emacs (advanced task)
+**Description:** Create a script that deletes all files in the current working directory that end with the character `~`.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `101-clean_emacs` <br>
+
+### 17. Tree (advanced task)
+**Description:** Create a script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory. <br>
+You are only allowed to use two spaces (and lines) in your script, not more.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `102-tree` <br>
+
+### 18. Life is a series of commas, not periods (advanced task)
+**Description:** Write a command that lists all the files and directories of the current directory, separated by commas (`,`).
+- Directory names should end with a slash (`/`)
+- Files and directories starting with a dot (`.`) should be listed
+- The listing should be alpha ordered, except for the directories `.` and `..` which should be listed at the very beginning
+- Only digits and letters are used to sort; Digits should come first
+- You can assume that all the files we will test with will have at least one letter or one digit
+- The listing should end with a new line.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `103-commas` <br>
+
+### 19. File type: School (advanced task)
+**Description:** Create a magic file `school.mgc` that can be used with the command `file` to detect `School` data files. `School` data files always contain the string `SCHOOL` at offset 0.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x00-shell_basics` <br>
+File: `school.mgc` <br>
