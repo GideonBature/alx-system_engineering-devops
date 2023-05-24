@@ -1,39 +1,212 @@
-# 0x03 Shell Variables and Expansions
+# Shell - Init Files, Variables, & Expansions
 
-This directory contains scripts related to shell variables and expansions. Shell variables are used to store data and settings that can be referenced and modified by the shell. Expansions, on the other hand, are special notations used to manipulate and transform data within the shell.
+Commands covered
+* `printenv`
+* `set`
+* `unset`
+* `export`
+* `alias`
+* `unalias`
+* `.`
+* `source`
+* `printf`
 
-## Scripts
 
-Below is a list of the scripts included in this directory:
+## Learning Objectives:
+### 1. General
+- What happens when you type `$ ls -l *.txt`
 
-0. `<o>`: This script creates an alias named `ls` with the value `rm *`.
-1. `1-hello_you`: This script prints "hello user" where user is the current Linux user.
-2. `2-path`: This script adds `/action` to the `PATH` environment variable, making it the last directory to search for programs.
-3. `3-count_dirs_in_path`: This script counts the number of directories in the `PATH` environment variable.
-4. `4-global_variables`: This script lists all environment variables.
-5. `5-local_variables`: This script lists all local variables, environment variables, and functions.
-6. `6-create_local_variable`: This script creates a new local variable named `BEST` with the value `School`.
-7. `7-create_global_variable`: This script creates a new global variable named `BEST` with the value `School`.
-8. `8-addition`: This script prints the result of adding 128 with the value stored in the `TRUEKNOWLEDGE` environment variable.
-9. `9-divide_and_rule`: This script prints the result of dividing the value stored in the `POWER` environment variable by the value stored in the `DIVIDE` environment variable.
-10. `10-love_exponent_breath`: This script displays the result of raising the value stored in the `BREATH` environment variable to the power of the value stored in the `LOVE` environment variable.
-11. `11-binary_to_decimal`: This script converts a number in base 2 (binary) stored in the `BINARY` environment variable to base 10 (decimal) and prints the result.
-12. `12-combination`: This script prints all possible combinations of two letters from `aa` to `zz`, excluding `oo`.
-13. `13-print_float`: This script prints a number with two decimal places stored in the `NUM` environment variable.
-14. `14-decimal_to_hexadecimal`: (Advanced) This script converts a number in base 10 (decimal) stored in the `DECIMAL` environment variable to base 16 (hexadecimal) and prints the result.
-15. `15-rot13`: (Advanced) This script encodes and decodes text using the ROT13 encryption.
-16. `16-odd_lines`: (Advanced) This script prints every other line from the input, starting with the first line.
-17. `17-base_water_stir`: (Advanced) This script adds the numbers stored in the `WATER` and `STIR` environment variables and prints the result in the base specified by the `bestchol` environment variable.
+### 2. Shell Initialization Files
+- What are the `/etc/profile` file and the `/etc/profile.d` directory
+- What is the `~/.bashrc` file
 
-Feel free to explore and run the scripts in this directory to learn more about shell variables and expansions.
+### 3. Variables
+- What is the difference between a local and a global variable
+- What is a reserved variable
+- How to create, update and delete shell variables
+- What are the roles of the following reserved variables: HOME, PATH, PS1
+- What are special parameters
+- What is the special parameter `$?`?
 
-## Usage
+### 4. Expansions
+- What is expansion and how to use them
+- What is the difference between single and double quotes and how to use them properly
+- How to do command substitution with `$()` and backticks
 
-To run the scripts in this directory, follow these steps:
+### 5. Shell Arithmetic
+- How to perform arithmetic operations with the shell
 
-1. Clone the repository and navigate to the "0x03-shell_variables_expansions" directory.
-2. Make the script executable using the command: `chmod +x <script_name>`
-3. Execute the script using one of the following commands: `./<script_name>` or `bash <script_name>`
+### 6. The `alias` Command
+- How to create an alias
+- How to list aliases
+- How to temporarily disable an alias
 
-Make sure to replace `<script_name>` with the name of the script
+### 7. Other `help` pages
+- How to execute commands from a file in the current shell
 
+## Project Requirements
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your scripts will be tested on Ubuntu 20.04 LTS
+- All your scripts should be exactly two lines long (`$ wc -l` file should print 2)
+- All your files should end with a new line ([why?](http://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file/18789))
+- The first line of all your files should be exactly `#!/bin/bash`
+- A `README.md` file, at the root of the folder of the project, describing what each script is doing
+- You are not allowed to use `&&`, `||` or `;`
+- You are not allowed to use bc, `sed` or `awk`
+- All your files must be executable
+
+### More Info
+Read your `/etc/profile`, `/etc/inputrc` and `~/.bashrc` files.
+
+Look at some files in the `/etc/profile.d` directory.
+
+**Note:** You do not have to learn about `awk`, `tar`, `bzip2`, `date`, `scp`, `ulimit`, `umask`, or shell scripting, yet.
+
+## Project Tasks
+### 0. \<o>
+**Description:** Create a script that creates an alias.
+- Name: `ls`
+- Value: `rm *`
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `0-alias` <br>
+
+### 1. Hello you
+**Description:** Create a script that prints `hello user`, where user is the current Linux user.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `1-hello_you` <br>
+
+### 2. The path to success is to take massive, determined action
+**Description:** Add `/action` to the `PATH`. `/action` should be the last directory the shell looks into when looking for a program.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `2-path` <br>
+
+### 3. If the path be beautiful, let us not ask where it leads
+**Description:** Create a script that counts the number of directories in the `PATH`.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `3-paths` <br>
+
+### 4. Global variables
+**Description:** Create a script that lists environment variables.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `4-global_variables` <br>
+
+### 5. Local variables
+**Description:** Create a script that lists all local variables and environment variables, and functions.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `5-local_variables` <br>
+
+### 6. Local variable
+**Description:** Create a script that creates a new local variable.
+- Name: `BEST`
+- Value: `School`
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `6-create_local_variable` <br>
+
+### 7. Global variable
+**Description:** Create a script that creates a new global variable.
+- Name: `BEST`
+- Value: `School`
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `7-create_global_variable` <br>
+
+### 8. Every addition to true knowledge is an addition to human power
+**Description:** Write a script that prints the result of the addition of 128 with the value stored in the environment variable `TRUEKNOWLEDGE`, followed by a new line.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `8-true_knowledge` <br>
+
+### 9. Divide and rule
+**Description:** Write a script that prints the result of `POWER` divided by `DIVIDE`, followed by a new line.
+- `POWER` and `DIVIDE` are environment variables
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `9-divide_and_rule` <br>
+
+### 10. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath
+**Description:** Write a script that displays the result of `BREATH` to the power `LOVE`
+- `BREATH` and `LOVE` are environment variables
+- The script should display the result, followed by a new line
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `10-love_exponent_breath` <br>
+
+### 11. There are 10 types of people in the world -- Those who understand binary, and those who don't
+**Description:** Write a script that converts a number from base 2 to base 10.
+- The number in base 2 is stored in the environment variable `BINARY`
+- The script should display the number in base 10, followed by a new line
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `11-binary_to_decimal` <br>
+
+### 12. Combination
+**Description:** Create a script that prints all possible combinations of two letters, except `oo`.
+- Letters are lower cases, from `a` to `z`
+- One combination per line
+- The output should be alpha ordered, starting with `aa`
+- Do not print `oo`
+- Your script file should contain maximum 64 characters
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `12-combinations` <br>
+
+### 13. Floats
+**Description:** Write a script that prints a number with two decimal places, followed by a new line. <br>
+The number will be stored in the environment variable `NUM`.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `13-print_float` <br>
+
+### 14. Decimal to Hexadecimal (advanced task)
+**Description:** Write a script that converts a number from base 10 to base 16.
+- The number in base 10 is stored in the environment variable `DECIMAL`
+- The script should display the number in base 16, followed by a new line
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `100-decimal_to_hexadecimal` <br>
+
+### 15. Everyone is a proponent of strong encryption (advanced task)
+**Description:** Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `101-rot13` <br>
+
+### 16. The eggs of the brood need to be an odd number (advanced task)
+**Description:** Write a script that prints every other line from the input, starting with the first line.
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `102-odd` <br>
+
+### 17. I'm an instant star. Just add water and stir. (advanced task)
+**Description:** Write a shell script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result.
+- `WATER` is in base `water`.
+- `STIR` is in base `stir`.
+- The result should be in base `bestchol`
+
+GitHub repository: `alx-system_engineering-devops` <br>
+Directory: `0x03-shell_variables_expansions` <br>
+File: `103-water_and_stir` <br>
