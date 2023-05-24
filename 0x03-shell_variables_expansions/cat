@@ -1,0 +1,22 @@
+total 80
+-rwxr-xr-x 1 0 0   28 May 16 11:23 0-alias
+-rwxr-xr-x 1 0 0   41 May 16 19:27 100-decimal_to_hexadecimal
+-rwxr-xr-x 1 0 0   45 May 16 20:29 101-rot13
+-rwxr-xr-x 1 0 0   61 May 16 21:01 103-water_and_stir
+-rwxr-xr-x 1 0 0   35 May 16 12:53 10-love_exponent_breath
+-rwxr-xr-x 1 0 0   32 May 16 19:13 11-binary_to_decimal
+-rwxr-xr-x 1 0 0   59 May 16 21:29 12-combinations
+-rwxr-xr-x 1 0 0   39 May 16 19:38 13-print_float
+-rwxr-xr-x 1 0 0   30 May 16 11:42 1-hello_you
+-rwxr-xr-x 1 0 0   38 May 16 20:39 2-path
+-rwxr-xr-x 1 0 0   45 May 16 18:36 3-paths
+-rwxr-xr-x 1 0 0   21 May 16 11:49 4-global_variables
+-rwxr-xr-x 1 0 0   16 May 16 11:52 5-local_variables
+-rwxr-xr-x 1 0 0   26 May 16 11:57 6-create_local_variable
+-rwxr-xr-x 1 0 0   33 May 16 12:06 7-create_global_variable
+-rwxr-xr-x 1 0 0   40 May 16 12:50 8-true_knowledge
+-rwxr-xr-x 1 0 0   37 May 16 12:24 9-divide_and_rule
+-rw-r--r-- 1 0 0    0 May 16 21:57 cat
+-rw-r--r-- 1 0 0   69 May 16 20:14 quote
+-rw-r--r-- 1 0 0 3198 May 16 11:22 README.md
+-rwxr-xr-x 1 0 0   45 May 16 20:27 test
