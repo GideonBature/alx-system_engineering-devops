@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# displays content of current directory in a list format
+files=$(ls)
+for file in $files
+do
+	if [[ $file == . ]] || [[ $file == .. ]]
+	then
+		continue
+	fi
+
+	name_after_dash=${file#*-}
+
+	echo "$name_after_dash"
+done
