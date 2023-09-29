@@ -8,7 +8,7 @@ handle_sigterm() {
 
 trap 'handle_sigterm' SIGTERM
 
-while [ true ]
+while  true
 do
 	echo "To infinity and beyond"
 	sleep 2
