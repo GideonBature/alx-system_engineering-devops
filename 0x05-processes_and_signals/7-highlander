@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# script that displays To infinity and beyond indefinitely.
+# shellcheck disable=SC2078
+
+handle_sigterm() {
+	echo "I am invincible!!!"
+}
+
+trap 'handle_sigterm' SIGTERM
+
+while [ true ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+
+done
