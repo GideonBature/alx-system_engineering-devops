@@ -5,7 +5,7 @@
 
 _For this project, we expect you to look at this concept:_
 
-*   [Regular Expression](/concepts/29)
+*   [Regular Expression](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x06-regular_expressions/concept-regex)
 
 Background Context
 ------------------
