@@ -131,7 +131,7 @@ In this project we will mainly focus on:
 
 The image bellow describes more concretely how you can relate to every level.
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/0fc96bd99faa7941b18bcae4c5f90c6acd11791d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231005T045335Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8cb3c62a0e2ada7b05cd8eb5ea2bd200dd2540e894b2a1d05f5e3403b8ae3130)
+![](https://github.com/GideonBature/alx-system_engineering-devops/blob/master/0x07-networking_basics/images/01.jpg)
 
 Questions:
 
@@ -159,7 +159,7 @@ How is the OSI model organized?
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231005T045335Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9f4d682fde553974365b56c5509a5397ca83691dd80a269aec9ce3e9bfabe178)
+![](https://github.com/GideonBature/alx-system_engineering-devops/blob/master/0x07-networking_basics/images/02.jpg)
 
 LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
 
@@ -195,7 +195,7 @@ What network do you use when you browse www.google.com from your smartphone (not
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231005T045335Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=620c1847a08e7581cf643edcc2747b5254be55bd46736a67b7de525b8b92b94c)
+![](https://github.com/GideonBature/alx-system_engineering-devops/blob/master/0x07-networking_basics/images/03.jpg)
 
 Questions:
 
@@ -223,7 +223,7 @@ What is an IP address?
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231005%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231005T045335Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=78787eba7505d04d53f32d5639cc77d6e5e32fa3545fe29a0f67f91b4e858a89)
+![](https://github.com/GideonBature/alx-system_engineering-devops/blob/master/0x07-networking_basics/images/04.jpg)
 
 Let’s fill the empty parts in the drawing above.
 
@@ -311,7 +311,7 @@ Example:
 
 mandatory
 
-![](https://media.giphy.com/media/uDxkJAVSU7GY8/giphy.gif)
+![](https://github.com/GideonBature/alx-system_engineering-devops/blob/master/0x07-networking_basics/images/05.gif)
 
 The Internet Control Message Protocol (ICMP) is a protocol in the Internet protocol suite. It is used by network devices, to check if other network devices are available on the network. The command `ping` uses ICMP to make sure that a network device remains online or to troubleshoot issues on the network.
 
