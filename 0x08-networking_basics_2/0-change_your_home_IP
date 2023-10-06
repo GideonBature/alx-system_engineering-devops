@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 # change my home IP address
 
-new_localhost_ip="127.0.0.2"
-
-sed -i "s/^127\.0\.0\.1.*localhost$/127.0.0.1 localhost\n$new_localhost_ip localhost/g" /etc/hosts
-sed -i "s/^8\.8\.8\.8.*facebook\.com$/8.8.8.8 facebook.com/g" /etc/hosts
-
-systemctl restart systemd-resolved
+cp /etc/hosts ~/hosts.new
+echo "127.0.0.2		localhost" > ~/hosts.new
+echo "8.8.8.8		facebook.com" >> ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
