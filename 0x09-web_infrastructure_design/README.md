@@ -13,15 +13,14 @@ DevOpsSysAdminweb infrastructure
 
 _For this project, we expect you to look at these concepts:_
 
-*   [DNS](https://intranet.alxswe.com/concepts/12)
-*   [Monitoring](https://intranet.alxswe.com/concepts/13)
-*   [Web Server](https://intranet.alxswe.com/concepts/17)
-*   [Network basics](https://intranet.alxswe.com/concepts/33)
-*   [Load balancer](https://intranet.alxswe.com/concepts/46)
-*   [Server](https://intranet.alxswe.com/concepts/67)
+*   [DNS](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design/concept_pages/dns)
+*   [Monitoring](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design/concept_pages/monitoring)
+*   [Web Server](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design/concept_pages/web_server)
+*   [Network basics](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design/concept_pages/network_basics)
+*   [Load balancer](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design/concept_pages/load_balancer)
+*   [Server](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design/concept_pages/server)
 
-
-https://youtu.be/lQNEW76KdYg
+[![Web Infrastructure](https://i.ytimg.com/vi/lQNEW76KdYg/thumbnail.jpg)](https://www.youtube.com/watch?v=lQNEW76KdYg)
 
 Resources
 ---------
