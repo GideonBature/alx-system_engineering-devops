@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# 295751-web-01 ubuntu 18.208.120.245 login
+
+ssh -i ~/.ssh/school ubuntu@18.208.120.245
+
