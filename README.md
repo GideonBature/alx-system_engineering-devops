@@ -13,3 +13,5 @@
 ### 0x09. [Web infrastructure design](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x09-web_infrastructure_design)
 ### 0x0A. [Configuration management](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0A-configuration_management)
 ### 0x0B. [SSH](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0B-ssh)
+### 0x0C. [Web server](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0C-web_server)
+### 0x0D. [Web stack debugging #0](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0)
