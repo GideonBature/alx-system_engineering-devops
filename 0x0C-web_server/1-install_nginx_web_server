@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Installing Nginx Web Server and Serving HTML page
+
+sudo apt-get update -y
+
+sudo apt-get install nginx -y
+
+sudo ufw allow 'Nginx HTTP'
+
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+
+sudo /etc/init.d/nginx reload
+
+curl localhost
