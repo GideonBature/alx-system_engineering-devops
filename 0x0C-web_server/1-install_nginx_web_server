@@ -7,8 +7,10 @@ sudo apt-get install nginx -y
 
 sudo ufw allow 'Nginx HTTP'
 
-echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+echo "Hello world!" | sudo tee /var/www/html/index.nginx-debian.html
 
-sudo nginx -t
+sudo /etc/init.d/nginx reload
 
-sudo service nginx reload
+sudo apt-get install curl
+
+curl localhost
