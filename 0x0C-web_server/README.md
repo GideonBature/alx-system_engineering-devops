@@ -13,7 +13,7 @@ DevOps || SysAdmin
 
 _For this project, we expect you to look at this concept:_
 
-*   [What is a Child Process?](https://intranet.alxswe.com/concepts/110)
+*   [What is a Child Process?](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0C-web_server/concept_pages/child_process)
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/266/8Gu52Qv.png)
 
@@ -57,7 +57,7 @@ Resources
 *   [How the web works](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
 *   [Nginx](https://en.wikipedia.org/wiki/Nginx)
 *   [How to Configure Nginx](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)
-*   [Child process concept page](https://intranet.alxswe.com/concepts/110)
+*   [Child process concept page](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0C-web_server/concept_pages/child_process)
 *   [Root and sub domain](https://landingi.com/help/domains-vs-subdomains/)
 *   [HTTP requests](https://www.tutorialspoint.com/http/http_methods.htm)
 *   [HTTP redirection](https://moz.com/learn/seo/redirection)
