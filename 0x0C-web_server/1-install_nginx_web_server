@@ -9,8 +9,6 @@ sudo ufw allow 'Nginx HTTP'
 
 echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
 
+sudo nginx -t
+
 sudo service nginx reload
-
-sudo apt-get install curl
-
-curl localhost
