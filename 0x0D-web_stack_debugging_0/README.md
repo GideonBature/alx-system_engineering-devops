@@ -13,9 +13,9 @@ DevOps || SysAdmin || Scripting || Debugging
 
 _For this project, we expect you to look at these concepts:_
 
-*   [Network basics](https://intranet.alxswe.com/concepts/33)
-*   [Docker](https://intranet.alxswe.com/concepts/65)
-*   [Web stack debugging](https://intranet.alxswe.com/concepts/68)
+*   [Network basics](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0/concept_pages/network_basics)
+*   [Docker](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0/concept_pages/docker)
+*   [Web stack debugging](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0/concept_pages/web_stack_debugging)
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/265/uWLzjc8.jpg)
 
