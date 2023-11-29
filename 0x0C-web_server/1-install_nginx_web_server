@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Installing Nginx Web Server and Serving HTML page
 
-sudo apt-get update -y
+apt-get update
 
-sudo apt-get install nginx -y
+apt-get -y install nginx
 
 ufw allow 'Nginx HTTP'
 
 echo "Hello World!" > /var/www/html/index.html
 
-/etc/init.d/nginx start
+service nginx reload
