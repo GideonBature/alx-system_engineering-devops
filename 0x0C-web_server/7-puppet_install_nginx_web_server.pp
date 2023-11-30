@@ -1,7 +1,5 @@
 # install nginx with puppet
 
-$replace_str="server_name _;\n\n\tlocation \/redirect_me {\n\t\t return 301 https:\/\/www.google.com;\n\t}"
-
 package {'nginx':
   ensure => 'present',
 }
@@ -16,7 +14,8 @@ exec {'Hello World!':
   provider => shell,
 }
 
-exec {'sudo sed -i "s/server_name _;/$replace_str/" /etc/nginx/sites-enabled/default':
+exec {'sudo sed -i "s/server_name _;/server_name _;\n\n\tlocation \/redirect_me {\n\t\t return 301 https:\/\/www.google.com;\n\t}" \
+/etc/nginx/sites-enabled/default':
   provider => shell,
 }
 
