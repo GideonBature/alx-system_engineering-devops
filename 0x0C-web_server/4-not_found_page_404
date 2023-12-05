@@ -7,14 +7,14 @@ sudo apt-get -y nginx
 
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
 
-replace_str="server_name _;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\t root \/var\/www\/html;\n\t\tinternal;\n\t}"
+replace_str="server_name _;\n\n\terror_page 404 \/custom_404.html;\n\tlocation = \/custom_404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
 
 sudo sed -i "s/server_name _;/$replace_str/" /etc/nginx/sites-enabled/default
 
 
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
-replace_str="server_name _;\n\n\tlocation \/redirect_me {\n\t\t return 301 https:\/\/www.google.com;\n\t}"
+replace_str="server_name _;\n\n\tlocation \/redirect_me {\n\t\treturn 301 https:\/\/www.google.com;\n\t}"
 
 sudo sed -i "s/server_name _;/$replace_str/" /etc/nginx/sites-enabled/default
 
