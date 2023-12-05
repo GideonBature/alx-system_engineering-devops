@@ -2,7 +2,7 @@
 # using puppet
 
 exec {'update':
-  command => '/usr/bin/apt-get',
+  command => '/usr/bin/apt-get update -y',
 }
 -> package { 'nginx':
   ensure => 'present',
