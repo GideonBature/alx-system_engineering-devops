@@ -2,13 +2,10 @@
 # Install and configures HAproxy on my lb-01 server
 
 # Update system packages
-sudo apt-get update -y
+sudo apt-geti -y update
 
 # install HAProxy
-sudo apt-get install haproxy -y
-
-# display HAProxy version
-sudo haproxy -v
+apt-get -y install haproxy
 
 # change server configuration
 
@@ -24,7 +21,7 @@ backend benehub-backend
 	server 295751-web-01 18.208.120.245:80 check
 	server 295751-web-02 34.204.60.174:80 check
 "
-echo "$config" | sudo tee -a /etc/haproxy.cfg
+echo "$config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
 # enable haproxy to be started by the init script
 
