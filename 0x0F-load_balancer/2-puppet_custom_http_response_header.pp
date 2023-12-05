@@ -8,7 +8,7 @@ exec {'update':
   ensure => 'present',
 }
 -> file_line { 'add_custom_header':
-  path  => '/etc/nginx/nginx.conf',
+  path  => '/etc/nginx/sites-enabled/default',
   match => 'server_name _;',
   line  => "server_name _;\n\tadd_header X-Served-By \"${hostname}\";",
 }
