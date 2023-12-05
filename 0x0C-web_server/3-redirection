@@ -7,7 +7,7 @@ sudo apt-get -y nginx
 
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
-replace_str="server_name _;\n\n\tlocation ^\/redirect_me {\n\t\t return 301 https:\/\/www.google.com;\n\t}"
+replace_str="server_name _;\n\n\tlocation \/redirect_me {\n\t\t return 301 https:\/\/www.google.com;\n\t}"
 
 sudo sed -i "s/server_name _;/$replace_str/" /etc/nginx/sites-enabled/default
 
