@@ -9,8 +9,8 @@ exec {'update':
 }
 -> file_line { 'add_custom_header':
   path  => '/etc/nginx/nginx.conf',
-  match => 'http {',
-  line  => "http {\n\tadd_header X-Served-By \"${hostname}\";",
+  match => 'server_name _;',
+  line  => "server_name _;\n\tadd_header X-Served-By \"${hostname}\";",
 }
 -> exec {'run':
   command => '/usr/sbin/service nginx restart',
