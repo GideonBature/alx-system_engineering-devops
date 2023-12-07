@@ -17,3 +17,4 @@
 ### 0x0D. [Web stack debugging #0](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0)
 ### 0x0E. [Web stack debugging #1](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0E-web_stack_debugging_1)
 ### 0x0F. [Load balancer](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0F-load_balancer)
+### 0x10. [HTTPS SSL](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x10-https_ssl)
