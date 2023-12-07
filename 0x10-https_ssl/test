@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC2086
+
+args="$#"
+
+if [[ "$args" -eq 1 ]]
+then
+	dig www."$1" | grep -A1 'ANSWER SECTION:' | tail -n +2 | awk '{printf "The subdomain www is a %s record and points to %s\n", $4, $5}'
+	dig lb-01."$1" | grep -A1 'ANSWER SECTION:' | tail -n +2 | awk '{printf "The subdomain lb-01 is a %s record and points to %s\n", $4, $5}'
+	dig web-01."$1" | grep -A1 'ANSWER SECTION:' | tail -n +2 | awk '{printf "The subdomain web-01 is a %s record and points to %s\n", $4, $5}'
+	dig web-02."$1" | grep -A1 'ANSWER SECTION:' | tail -n +2 | awk '{printf "The subdomain web-02 is a %s record and points to %s\n", $4, $5}'
+fi
