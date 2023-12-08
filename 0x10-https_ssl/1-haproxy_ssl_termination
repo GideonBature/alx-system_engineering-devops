@@ -7,10 +7,6 @@ global
 	user haproxy
 	group haproxy
 	daemon
-	
-	# Settings for SSL/TLS
-	maxconn 2048
-	tune.ssl.default-dh-param 2048
 
 	# Default SSL material locations
 	ca-base /etc/ssl/certs
@@ -37,31 +33,21 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-	# Settings for SSL/TLS
-	option forwardfor
-	option http-server-close
-
 frontend www-http
 	# Settings for SSL/TLS
-	bind 54.166.141.28:80
+	bind *:80
 	mode http
-	reqadd X-Forwarded-Proto:\ http
+	http-request set-header X-Forwarded-Proto http
 	default_backend www-backend
+
 frontend www-https
 	# Settings for SSL/TLS
-	bind 54.166.141.28:443 ssl crt /etc/haproxy/certs/www.benehub.tech.pem
-	reqadd X-Forwarded-Proto:\ https
-	mode tcp
-	acl letsencrypt-acl path_beg /.well-known/acme-challenge/
-	use_backend letsencrypt-backend if letsencrypt-acl
+	bind *:443 ssl crt /etc/haproxy/certs/www.benehub.tech.pem
+	http-request set-header X-Forwarded-Proto https
 	default_backend www-backend
+
 backend www-backend
 	# Settings for SSL/TLS
 	balance roundrobin
-	mode http
-	redirect scheme https if !{ ssl_fc }
 	server 295751-web-01 18.208.120.245:80 check
 	server 295751-web-02 34.204.60.174:80 check
-backend letsencrypt-backend
-	# Settings for SSL/TLS
-	server letsencrypt 127.0.0.1:54321
