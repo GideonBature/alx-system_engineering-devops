@@ -3,11 +3,17 @@
 # add custom error page.
 # add a custom Nginx response header.
 
-sudo apt-get -y update
+#!/usr/bin/env bash
+# automate installation and set up of nginx web server, redirection
+# and custom error messages
 
-sudo apt-get -y install nginx
+sudo apt-get update -y
+
+sudo apt-get install nginx -y
 
 sudo ufw allow 'Nginx HTTP'
+
+sudo chown -R $USER:$USER /var/www
 
 sudo chmod -R 755 /var/www
 
@@ -17,14 +23,15 @@ replace_str="server_name _;\n\n\terror_page 404 \/custom_404.html;\n\tlocation =
 
 sudo sed -i "s/server_name _;/$replace_str/" /etc/nginx/sites-enabled/default
 
+
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
 replace_str="server_name _;\n\n\tlocation \/redirect_me {\n\t\treturn 301 https:\/\/www.google.com;\n\t}"
 
 sudo sed -i "s/server_name _;/$replace_str/" /etc/nginx/sites-enabled/default
 
-replace_str="server_name _;\n\n\t# Add a custom header \n\n\tadd_header X-Served-By \$hostname;\n"
 
+replace_str="server_name _;\n\n\t# Add Custom Header\n\tadd_header X-Served-By \$hostname;"
 sudo sed -i "s/server_name _;/$replace_str/" /etc/nginx/sites-enabled/default
 
 sudo service nginx restart
