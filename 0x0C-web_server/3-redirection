@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 #configure Nginx server to redirect to another page
+#!/usr/bin/env bash
+# automate installation and set up of nginx web server, redirection
+# and custom error messages
 
-sudo apt-get -y update
+sudo apt-get update -y
 
-sudo apt-get -y nginx
+sudo apt-get install nginx -y
+
+sudo ufw allow 'Nginx HTTP'
+
+sudo chown -R $USER:$USER /var/www
+
+sudo chmod -R 755 /var/www
 
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
