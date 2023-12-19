@@ -23,3 +23,5 @@
 ### 0x13. [Firewall](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x13-firewall)
 
 ### 0x13. [Web stack debugging #2](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2)
+
+### 0x13. [MySQL](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x13-mysql)
