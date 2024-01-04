@@ -32,7 +32,7 @@ if __name__ == "__main__":
             else:
                 tc += 1
 
-    u_name = name_data[employeeId - 1]["name"]
+    u_name = name_data[employeeId - 1]["username"]
     file_name = f"{employeeId}.csv"
 
     with open(file_name, mode='w', newline='') as csv_file:
