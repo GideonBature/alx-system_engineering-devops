@@ -8,7 +8,7 @@ import sys
 
 
 if __name__ == "__main__":
-    employeeId = int(sys.argv[1]) - 1
+    employeeId = int(sys.argv[1])
 
     api_url = "https://jsonplaceholder.typicode.com/todos/"
 
@@ -31,7 +31,7 @@ if __name__ == "__main__":
             else:
                 tc += 1
 
-    u_name = name_data[employeeId]["name"]
+    u_name = name_data[employeeId - 1]["name"]
 
     print(f"Employee {u_name} is done with tasks({cc}/{tc}):")
 
