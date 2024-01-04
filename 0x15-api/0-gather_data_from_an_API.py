@@ -39,4 +39,4 @@ if __name__ == "__main__":
         if data[i]["userId"] is employeeId:
             if (data[i]["completed"] is True):
                 title = data[i]["title"]
-                print("\t{}".format(title))
+                print("\t", title)
