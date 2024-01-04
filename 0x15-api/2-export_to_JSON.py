@@ -21,17 +21,6 @@ if __name__ == "__main__":
     name_response = requests.get(api_name_url)
     name_data = name_response.json()
 
-    cc = 0
-    tc = 0
-
-    for i in range(len(data)):
-        if data[i]["userId"] is employeeId:
-            if (data[i]["completed"] is True):
-                cc += 1
-                tc += 1
-            else:
-                tc += 1
-
     u_name = name_data[employeeId - 1]["username"]
     file_name = f"{employeeId}.json"
     dict_key = f"{employeeId}"
