@@ -27,9 +27,7 @@ if __name__ == "__main__":
         if data[i]["userId"] is employeeId:
             if (data[i]["completed"] is True):
                 cc += 1
-                tc += 1
-            else:
-                tc += 1
+            tc += 1
 
     u_name = name_data[employeeId - 1]["name"]
 
