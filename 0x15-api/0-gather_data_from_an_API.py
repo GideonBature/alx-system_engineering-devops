@@ -33,10 +33,10 @@ if __name__ == "__main__":
 
     u_name = name_data[employeeId - 1]["name"]
 
-    print(f"Employee {u_name} is done with tasks({cc}/{tc}):")
+    print("Employee {} is done with tasks({}/{}):".format(u_name, cc, tc))
 
     for i in range(len(data)):
         if data[i]["userId"] is employeeId:
             if (data[i]["completed"] is True):
                 title = data[i]["title"]
-                print(f"\t{title}")
+                print("\t{}".format(title))
