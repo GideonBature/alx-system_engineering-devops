@@ -8,7 +8,7 @@ import sys
 
 
 if __name__ == "__main__":
-    employeeId = int(sys.argv[1])
+    employeeId = int(sys.argv[1]) - 1
 
     api_url = "https://jsonplaceholder.typicode.com/todos/"
 
