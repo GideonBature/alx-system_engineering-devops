@@ -17,7 +17,7 @@ def number_of_subscribers(subreddit):
         or 0 if invalid
     """
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    headers = {"User-Agent": "YourCustomUserAgentHere"}
+    headers = {"User-Agent": "Google Chrome Version 81.0.4044.129"}
 
     response = requests.get(url, headers=headers)
 
