@@ -17,17 +17,17 @@ def number_of_subscribers(subreddit):
         or 0 if invalid
     """
 
-    if subreddit is None or not isinstance(subreddit, str):
-        return 0
-
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     user_agent = {"User-Agent": "kubuntu:konsole:v23.08.1 (by /u/0x83N3)"}
 
     response = requests.get(url, headers=user_agent)
-    data = response.json()
 
-    try:
-        return data["data"]["subscribers"]
+    if response.status_code == 200:
+        try:
+            data = response.json()
+            return data["data"]["subscribers"]
+        except KeyError:
+            return 0
 
-    except Exception:
+    else:
         return 0
