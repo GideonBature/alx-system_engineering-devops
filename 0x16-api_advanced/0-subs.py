@@ -16,17 +16,18 @@ def number_of_subscribers(subreddit):
         int: The number of subscribers of the subreddit,
         or 0 if invalid
     """
+
+    if subreddit is None or not isinstance(subreddit, str):
+        return 0
+
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    headers = {"User-Agent": "Google Chrome Version 81.0.4044.129"}
+    user_agent = {"User-Agent": "Google Chrome Version 81.0.4044.129"}
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=user_agent)
+    data = response.json()
 
-    if response.status_code == 200:
-        try:
-            data = response.json()
-            return data["data"]["subscribers"]
-        except KeyError:
-            return 0
+    try:
+        return data["data"]["subscribers"]
 
-    else:
+    except Exception:
         return 0
