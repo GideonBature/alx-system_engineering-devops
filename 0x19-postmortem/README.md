@@ -5,7 +5,7 @@
 
 _For this project, we expect you to look at this concept:_
 
-*   [On-call](/concepts/39)
+*   [On-call](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x19-postmortem/concept_pages)
 
 Background Context
 ------------------
