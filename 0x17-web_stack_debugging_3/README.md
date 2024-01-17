@@ -5,8 +5,8 @@
 
 _For this project, we expect you to look at these concepts:_
 
-*   [Web Server](/concepts/17)
-*   [Web stack debugging](/concepts/68)
+*   [Web Server](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x18-webstack_monitoring/concept_pages/server)
+*   [Web stack debugging](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x0D-web_stack_debugging_0/concept_pages/web_stack_debugging)
 
 Background Context
 ------------------
