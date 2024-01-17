@@ -5,8 +5,8 @@
 
 _For this project, we expect you to look at these concepts:_
 
-*   [Monitoring](/concepts/13)
-*   [Server](/concepts/67)
+*   [Monitoring](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x18-webstack_monitoring/concept_pages/monitoring)
+*   [Server](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x18-webstack_monitoring/concept_pages/server)
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/281/hb3pAsO.png)
 
