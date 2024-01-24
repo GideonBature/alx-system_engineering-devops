@@ -37,3 +37,5 @@
 ### 0x19. [Postmortem](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x19-postmortem)
 
 ### 0x1A. [Application server](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x1A-application_server)
+
+### 0x1B. [Web stack debugging #4](https://github.com/GideonBature/alx-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4)
